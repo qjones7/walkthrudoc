@@ -1,8 +1,10 @@
 
 ---
 - hosts: localhost
+  gather_facts: no  
   roles:
   - yatesr.timezone
 
   vars:
+   ansible_python_interpreter: auto
    timezone: America/New_York
