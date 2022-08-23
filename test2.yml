@@ -3,6 +3,6 @@
   collections:
     - community.general
   tasks:
-    - name: Set timezone to Asia/Tokyo
+    - name: Set timezone to America/New_York
       community.general.timezone:
         name: America/New_York
