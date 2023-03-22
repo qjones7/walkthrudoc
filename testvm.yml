@@ -1,0 +1,16 @@
+---
+- name: Create VM
+- hosts: all
+
+  tasks:
+    - name: Create VM with defaults
+      azure.azcollection.azure_rm_virtualmachine:
+        resource_group: jonesq2
+        name: testvm10
+        admin_username: "admin"
+        admin_password: "password1234"
+        image:
+          offer: CentOS
+          publisher: OpenLogic
+          sku: '7.1'
+          version: latest
