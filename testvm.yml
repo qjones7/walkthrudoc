@@ -1,6 +1,6 @@
 ---
 - name: Create VM
-- hosts: all
+- hosts: localhost
 
   tasks:
     - name: Create VM with defaults
